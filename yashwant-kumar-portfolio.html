@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yashwant Kumar | MIS Executive & Data Operations Specialist | Noida</title>
+<meta name="description" content="Yashwant Kumar — MIS Executive, Reporting Analyst & Data Operations Specialist based in Noida, India. Expert in Advanced Excel, KPI Dashboards, SLA/TAT Monitoring. Formerly Tech Mahindra – Maruti NEXA.">
+<meta name="keywords" content="MIS Executive Noida, Data Analyst Delhi NCR, Reporting Analyst, KPI Dashboard, Advanced Excel, Tech Mahindra, Maruti NEXA, Yashwant Kumar">
+<meta property="og:title" content="Yashwant Kumar | MIS Executive & Data Analyst">
+<meta property="og:description" content="Data operations professional who turns raw numbers into business decisions. Ex-Tech Mahindra (Maruti NEXA). Zero Error Award Winner.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg-deep:    #030B18;
+    --bg-card:    #071422;
+    --bg-card2:   #0C1E35;
+    --accent-c:   #00C6E0;
+    --accent-g:   #C9A84C;
+    --accent-glow:#00C6E044;
+    --text-hi:    #EDF2FF;
+    --text-mid:   #8BABC8;
+    --text-lo:    #3D5A78;
+    --border:     #112035;
+    --border-hi:  #1E3A5F;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg-deep);
+    color: var(--text-hi);
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  /* ── CANVAS BACKGROUND ── */
+  #bg-canvas {
+    position: fixed; top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: 0; pointer-events: none;
+    opacity: 0.35;
+  }
+
+  /* ── LAYOUT ── */
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 1; }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(3,11,24,0.82);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--border);
+    padding: 16px 0;
+    transition: all .3s;
+  }
+  nav .inner {
+    display: flex; align-items: center; justify-content: space-between;
+    max-width: 1100px; margin: 0 auto; padding: 0 24px;
+  }
+  .nav-logo {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700; font-size: 20px;
+    color: var(--text-hi); text-decoration: none;
+    letter-spacing: -.5px;
+  }
+  .nav-logo span { color: var(--accent-c); }
+  .nav-links { display: flex; gap: 32px; list-style: none; }
+  .nav-links a {
+    color: var(--text-mid); text-decoration: none;
+    font-size: 13px; font-weight: 500; letter-spacing: .5px;
+    text-transform: uppercase; transition: color .2s;
+  }
+  .nav-links a:hover { color: var(--accent-c); }
+  .nav-cta {
+    background: var(--accent-c); color: var(--bg-deep) !important;
+    padding: 8px 20px; border-radius: 6px; font-weight: 600 !important;
+    transition: opacity .2s !important;
+  }
+  .nav-cta:hover { opacity: .85; }
+
+  /* ── HERO ── */
+  #hero {
+    min-height: 100vh;
+    display: flex; align-items: center;
+    padding: 120px 0 80px;
+    position: relative;
+  }
+  .hero-eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px; color: var(--accent-c);
+    letter-spacing: 2px; text-transform: uppercase;
+    margin-bottom: 20px;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .hero-eyebrow::before {
+    content: ''; display: block;
+    width: 28px; height: 1px; background: var(--accent-c);
+  }
+  .hero-name {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(44px, 7vw, 80px);
+    font-weight: 700; line-height: 1.05;
+    letter-spacing: -2px;
+    margin-bottom: 8px;
+  }
+  .hero-name .highlight {
+    color: transparent;
+    -webkit-text-stroke: 1.5px var(--accent-c);
+  }
+  .hero-role {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(16px, 2.5vw, 22px);
+    color: var(--text-mid); font-weight: 400;
+    margin-bottom: 24px; letter-spacing: -.3px;
+  }
+  .hero-role strong { color: var(--accent-g); font-weight: 600; }
+  .hero-desc {
+    max-width: 580px; color: var(--text-mid);
+    font-size: 15px; line-height: 1.8; margin-bottom: 40px;
+  }
+  .hero-btns { display: flex; gap: 16px; flex-wrap: wrap; }
+  .btn-primary {
+    background: var(--accent-c); color: var(--bg-deep);
+    padding: 14px 32px; border-radius: 8px;
+    font-weight: 700; font-size: 14px;
+    text-decoration: none; letter-spacing: .3px;
+    transition: all .2s; display: inline-flex; align-items: center; gap: 8px;
+    box-shadow: 0 0 28px var(--accent-glow);
+  }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 0 44px var(--accent-glow); }
+  .btn-ghost {
+    border: 1px solid var(--border-hi); color: var(--text-hi);
+    padding: 14px 32px; border-radius: 8px;
+    font-weight: 600; font-size: 14px;
+    text-decoration: none; letter-spacing: .3px;
+    transition: all .2s; display: inline-flex; align-items: center; gap: 8px;
+  }
+  .btn-ghost:hover { border-color: var(--accent-c); color: var(--accent-c); }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(201,168,76,.12); border: 1px solid rgba(201,168,76,.3);
+    color: var(--accent-g); padding: 8px 16px; border-radius: 50px;
+    font-size: 12px; font-weight: 600; letter-spacing: .5px;
+    margin-bottom: 32px;
+  }
+  .hero-badge::before { content: '🏆'; }
+  .hero-location {
+    display: flex; align-items: center; gap: 6px;
+    color: var(--text-mid); font-size: 13px; margin-top: 24px;
+  }
+  .hero-location svg { color: var(--accent-c); }
+
+  /* ── STATS ── */
+  #stats { padding: 60px 0; }
+  .stats-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px;
+    background: var(--border); border-radius: 16px; overflow: hidden;
+  }
+  .stat-card {
+    background: var(--bg-card); padding: 36px 28px;
+    text-align: center; transition: background .2s;
+  }
+  .stat-card:hover { background: var(--bg-card2); }
+  .stat-num {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 44px; font-weight: 700;
+    color: var(--accent-c); line-height: 1;
+    margin-bottom: 8px;
+    font-variant-numeric: tabular-nums;
+  }
+  .stat-num .unit { font-size: 22px; color: var(--accent-g); }
+  .stat-label { color: var(--text-mid); font-size: 13px; font-weight: 500; line-height: 1.4; }
+
+  /* ── SECTION COMMON ── */
+  section { padding: 90px 0; }
+  .section-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px; color: var(--accent-c);
+    letter-spacing: 3px; text-transform: uppercase;
+    display: flex; align-items: center; gap: 10px;
+    margin-bottom: 16px;
+  }
+  .section-tag::before { content: ''; display: block; width: 20px; height: 1px; background: var(--accent-c); }
+  .section-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(28px, 4vw, 42px);
+    font-weight: 700; letter-spacing: -1px;
+    line-height: 1.1; margin-bottom: 16px;
+  }
+  .section-sub { color: var(--text-mid); font-size: 15px; max-width: 520px; line-height: 1.7; }
+
+  /* ── ABOUT ── */
+  #about .about-grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 64px; align-items: center; margin-top: 60px;
+  }
+  .about-text p { color: var(--text-mid); line-height: 1.8; margin-bottom: 20px; font-size: 15px; }
+  .about-text p strong { color: var(--text-hi); }
+  .about-card {
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: 16px; padding: 32px; position: relative; overflow: hidden;
+  }
+  .about-card::before {
+    content: ''; position: absolute; top: 0; right: 0;
+    width: 120px; height: 120px;
+    background: radial-gradient(circle, var(--accent-glow), transparent 70%);
+  }
+  .about-card-item {
+    display: flex; align-items: flex-start; gap: 16px;
+    padding: 16px 0; border-bottom: 1px solid var(--border);
+  }
+  .about-card-item:last-child { border-bottom: none; padding-bottom: 0; }
+  .aci-icon {
+    width: 40px; height: 40px; border-radius: 10px;
+    background: rgba(0,198,224,.1); display: flex; align-items: center;
+    justify-content: center; font-size: 18px; flex-shrink: 0;
+  }
+  .aci-label { font-size: 11px; color: var(--text-lo); text-transform: uppercase; letter-spacing: 1px; }
+  .aci-val { font-size: 14px; color: var(--text-hi); font-weight: 500; margin-top: 2px; }
+
+  /* ── SKILLS ── */
+  #skills { background: linear-gradient(180deg, transparent, rgba(0,198,224,.03), transparent); }
+  .skills-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
+    margin-top: 56px;
+  }
+  .skill-card {
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: 14px; padding: 28px;
+    transition: all .3s; position: relative; overflow: hidden;
+  }
+  .skill-card:hover {
+    border-color: var(--accent-c);
+    transform: translateY(-4px);
+    box-shadow: 0 16px 48px rgba(0,198,224,.1);
+  }
+  .skill-card::after {
+    content: ''; position: absolute; bottom: 0; left: 0;
+    height: 2px; background: linear-gradient(90deg, var(--accent-c), transparent);
+    width: 0; transition: width .3s;
+  }
+  .skill-card:hover::after { width: 100%; }
+  .skill-icon { font-size: 28px; margin-bottom: 14px; }
+  .skill-name {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 15px; font-weight: 600; margin-bottom: 8px;
+  }
+  .skill-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
+  .tag {
+    background: rgba(0,198,224,.08); color: var(--accent-c);
+    border: 1px solid rgba(0,198,224,.15);
+    padding: 4px 10px; border-radius: 4px;
+    font-size: 11px; font-family: 'JetBrains Mono', monospace; font-weight: 500;
+  }
+  .tag.gold {
+    background: rgba(201,168,76,.08); color: var(--accent-g);
+    border-color: rgba(201,168,76,.2);
+  }
+  .skill-level { margin-top: 16px; }
+  .skill-bar-bg {
+    background: var(--border); border-radius: 4px; height: 4px; overflow: hidden;
+  }
+  .skill-bar-fill {
+    height: 100%; border-radius: 4px;
+    background: linear-gradient(90deg, var(--accent-c), #0090A8);
+    width: 0; transition: width 1.2s ease;
+  }
+  .skill-bar-label {
+    display: flex; justify-content: space-between;
+    font-size: 11px; color: var(--text-lo); margin-bottom: 6px;
+  }
+
+  /* ── EXPERIENCE ── */
+  #experience .exp-card {
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: 16px; padding: 40px; margin-top: 56px; position: relative;
+  }
+  .exp-top {
+    display: flex; justify-content: space-between;
+    align-items: flex-start; gap: 24px; flex-wrap: wrap;
+    margin-bottom: 32px; padding-bottom: 32px;
+    border-bottom: 1px solid var(--border);
+  }
+  .exp-company {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 22px; font-weight: 700; margin-bottom: 4px;
+  }
+  .exp-role { color: var(--accent-c); font-size: 14px; font-weight: 600; letter-spacing: .3px; }
+  .exp-meta {
+    text-align: right;
+  }
+  .exp-period {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px; color: var(--accent-g); font-weight: 500;
+    display: block; margin-bottom: 6px;
+  }
+  .exp-location { color: var(--text-mid); font-size: 13px; }
+  .exp-client {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(201,168,76,.1); border: 1px solid rgba(201,168,76,.25);
+    color: var(--accent-g); padding: 8px 14px; border-radius: 8px;
+    font-size: 12px; font-weight: 600; letter-spacing: .5px; margin-bottom: 28px;
+  }
+  .exp-bullets { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+  .exp-bullets li {
+    display: flex; align-items: flex-start; gap: 14px;
+    color: var(--text-mid); font-size: 14px; line-height: 1.65;
+  }
+  .exp-bullets li::before {
+    content: '▹'; color: var(--accent-c);
+    font-size: 12px; margin-top: 3px; flex-shrink: 0;
+  }
+  .exp-bullets li strong { color: var(--text-hi); }
+
+  /* ── PROJECT ── */
+  #projects .proj-card {
+    margin-top: 56px;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center;
+  }
+  .proj-preview {
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: 16px; padding: 28px; aspect-ratio: 16/10; overflow: hidden;
+    display: flex; flex-direction: column; gap: 12px; position: relative;
+  }
+  .proj-preview::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0;
+    height: 3px; background: linear-gradient(90deg, var(--accent-c), var(--accent-g));
+  }
+  .dash-top { display: flex; gap: 8px; flex-wrap: wrap; }
+  .dash-mini {
+    background: var(--bg-card2); border: 1px solid var(--border);
+    border-radius: 8px; padding: 12px 14px; flex: 1; min-width: 80px;
+  }
+  .dash-mini-val {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 18px; color: var(--accent-c); font-weight: 500;
+  }
+  .dash-mini-lbl { font-size: 10px; color: var(--text-lo); text-transform: uppercase; letter-spacing: 1px; margin-top: 2px; }
+  .dash-bar { background: var(--bg-card2); border: 1px solid var(--border); border-radius: 8px; padding: 14px; }
+  .dash-bar-row { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+  .dash-bar-lbl { font-size: 10px; color: var(--text-mid); width: 60px; flex-shrink: 0; }
+  .dash-bar-t { flex: 1; height: 6px; background: var(--border); border-radius: 3px; overflow: hidden; }
+  .dash-bar-f { height: 100%; border-radius: 3px; background: linear-gradient(90deg, var(--accent-c), rgba(0,198,224,.4)); }
+  .dash-bar-val { font-size: 10px; color: var(--text-mid); font-family: 'JetBrains Mono', monospace; width: 28px; }
+  .proj-info { }
+  .proj-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 26px; font-weight: 700; letter-spacing: -.5px; margin-bottom: 16px;
+  }
+  .proj-desc { color: var(--text-mid); font-size: 14px; line-height: 1.8; margin-bottom: 24px; }
+  .proj-stack { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
+
+  /* ── EDUCATION ── */
+  #education { }
+  .edu-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; margin-top: 56px; }
+  .edu-card {
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: 14px; padding: 28px; transition: all .3s;
+  }
+  .edu-card:hover { border-color: var(--border-hi); transform: translateY(-2px); }
+  .edu-icon { font-size: 28px; margin-bottom: 16px; }
+  .edu-degree {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 15px; font-weight: 600; margin-bottom: 4px;
+  }
+  .edu-univ { color: var(--text-mid); font-size: 13px; margin-bottom: 12px; }
+  .edu-year {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px; color: var(--accent-c); letter-spacing: 1px;
+  }
+
+  /* ── AWARD ── */
+  #awards .award-card {
+    margin-top: 56px;
+    background: linear-gradient(135deg, rgba(201,168,76,.08), rgba(0,198,224,.05));
+    border: 1px solid rgba(201,168,76,.25);
+    border-radius: 20px; padding: 48px;
+    display: flex; align-items: center; gap: 48px;
+    flex-wrap: wrap;
+  }
+  .award-icon { font-size: 72px; flex-shrink: 0; }
+  .award-body { flex: 1; min-width: 260px; }
+  .award-name {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 28px; font-weight: 700;
+    color: var(--accent-g); margin-bottom: 8px; letter-spacing: -.5px;
+  }
+  .award-by { color: var(--text-mid); font-size: 14px; margin-bottom: 16px; }
+  .award-desc { color: var(--text-mid); font-size: 14px; line-height: 1.8; }
+
+  /* ── CONTACT ── */
+  #contact {
+    background: linear-gradient(135deg, rgba(0,198,224,.03), rgba(201,168,76,.02));
+    border-top: 1px solid var(--border);
+    padding: 90px 0;
+  }
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; margin-top: 56px; }
+  .contact-heading {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 36px; font-weight: 700; letter-spacing: -1px; margin-bottom: 16px;
+  }
+  .contact-sub { color: var(--text-mid); font-size: 14px; line-height: 1.8; margin-bottom: 32px; }
+  .contact-links { display: flex; flex-direction: column; gap: 14px; }
+  .contact-link {
+    display: flex; align-items: center; gap: 16px;
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: 12px; padding: 16px 20px; text-decoration: none;
+    color: var(--text-hi); transition: all .2s;
+  }
+  .contact-link:hover { border-color: var(--accent-c); transform: translateX(4px); }
+  .cl-icon {
+    width: 40px; height: 40px; border-radius: 10px;
+    background: rgba(0,198,224,.1); display: flex; align-items: center;
+    justify-content: center; font-size: 18px; flex-shrink: 0;
+  }
+  .cl-label { font-size: 11px; color: var(--text-lo); text-transform: uppercase; letter-spacing: 1px; }
+  .cl-val { font-size: 14px; color: var(--text-hi); font-weight: 500; }
+  .contact-form-area {
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: 16px; padding: 36px;
+  }
+  .form-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px; font-weight: 600; margin-bottom: 24px;
+  }
+  .form-group { margin-bottom: 18px; }
+  .form-group label { display: block; font-size: 12px; color: var(--text-mid); margin-bottom: 8px; font-weight: 500; letter-spacing: .5px; text-transform: uppercase; }
+  .form-group input, .form-group textarea {
+    width: 100%; background: var(--bg-deep); border: 1px solid var(--border);
+    border-radius: 8px; padding: 12px 16px; color: var(--text-hi);
+    font-size: 14px; font-family: 'Inter', sans-serif;
+    transition: border .2s; outline: none; resize: vertical;
+  }
+  .form-group input:focus, .form-group textarea:focus { border-color: var(--accent-c); }
+  .form-group textarea { min-height: 100px; }
+  .form-submit {
+    width: 100%; background: var(--accent-c); color: var(--bg-deep);
+    border: none; border-radius: 8px; padding: 14px;
+    font-size: 14px; font-weight: 700; cursor: pointer;
+    font-family: 'Space Grotesk', sans-serif; letter-spacing: .3px;
+    transition: all .2s;
+  }
+  .form-submit:hover { opacity: .85; transform: translateY(-1px); }
+
+  /* ── FOOTER ── */
+  footer {
+    border-top: 1px solid var(--border); padding: 28px 0;
+    text-align: center; color: var(--text-lo); font-size: 13px;
+  }
+  footer a { color: var(--accent-c); text-decoration: none; }
+
+  /* ── SCROLLBAR ── */
+  ::-webkit-scrollbar { width: 4px; }
+  ::-webkit-scrollbar-track { background: var(--bg-deep); }
+  ::-webkit-scrollbar-thumb { background: var(--border-hi); border-radius: 4px; }
+
+  /* ── FADE IN ── */
+  .fade-in { opacity: 0; transform: translateY(24px); transition: all .7s ease; }
+  .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+  /* ── RESPONSIVE ── */
+  @media(max-width: 768px) {
+    .nav-links { display: none; }
+    .stats-grid { grid-template-columns: repeat(2,1fr); }
+    #about .about-grid { grid-template-columns: 1fr; gap: 32px; }
+    .skills-grid { grid-template-columns: 1fr 1fr; }
+    #projects .proj-card { grid-template-columns: 1fr; }
+    .edu-grid { grid-template-columns: 1fr 1fr; }
+    .contact-grid { grid-template-columns: 1fr; }
+    .exp-top { flex-direction: column; }
+    .exp-meta { text-align: left; }
+    .hero-name { letter-spacing: -1px; }
+  }
+  @media(max-width: 480px) {
+    .skills-grid { grid-template-columns: 1fr; }
+    .edu-grid { grid-template-columns: 1fr; }
+    .stats-grid { grid-template-columns: 1fr 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+
+<!-- NAV -->
+<nav>
+  <div class="inner">
+    <a class="nav-logo" href="#hero">YK<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="container">
+    <div class="hero-eyebrow">Available for Opportunities</div>
+    <h1 class="hero-name">
+      Yashwant<br>
+      <span class="highlight">Kumar</span>
+    </h1>
+    <p class="hero-role">MIS Executive &amp; <strong>Data Operations Specialist</strong></p>
+    <div class="hero-badge">Zero Error Recognition Award — Tech Mahindra</div>
+    <p class="hero-desc">
+      I turn raw operational data into dashboards, decisions, and measurable business outcomes.
+      Formerly driving complaint analytics for India's premium automotive brand —
+      <strong>Maruti Suzuki NEXA</strong> — through Tech Mahindra.
+    </p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn-primary">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+        Get In Touch
+      </a>
+      <a href="https://www.linkedin.com/in/yashwantkumarx" target="_blank" class="btn-ghost">
+        <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        LinkedIn Profile
+      </a>
+    </div>
+    <div class="hero-location">
+      <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      Noida, Uttar Pradesh, India &nbsp;·&nbsp; Open to Delhi NCR Opportunities
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div id="stats">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-card fade-in">
+        <div class="stat-num"><span class="counter" data-target="500">0</span><span class="unit">+</span></div>
+        <div class="stat-label">Complaints Audited<br>Monthly</div>
+      </div>
+      <div class="stat-card fade-in">
+        <div class="stat-num"><span class="counter" data-target="99" data-decimal>0</span><span class="unit">%</span></div>
+        <div class="stat-label">Data Accuracy<br>Rate Maintained</div>
+      </div>
+      <div class="stat-card fade-in">
+        <div class="stat-num"><span class="counter" data-target="15">0</span><span class="unit">+</span></div>
+        <div class="stat-label">KPI Dashboards<br>Built &amp; Automated</div>
+      </div>
+      <div class="stat-card fade-in">
+        <div class="stat-num"><span class="counter" data-target="7">0</span><span class="unit">mo</span></div>
+        <div class="stat-label">Premium Brand<br>Experience (NEXA)</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="section-tag">About Me</div>
+    <h2 class="section-title">Data is a story.<br>I help businesses read it.</h2>
+    <div class="about-grid">
+      <div class="about-text fade-in">
+        <p>
+          I'm a <strong>data-driven operations professional</strong> based in Noida, specializing in MIS reporting, complaint analytics, and KPI dashboard automation. My work sits at the intersection of operations and intelligence — making sure every business decision is backed by clean, reliable data.
+        </p>
+        <p>
+          At Tech Mahindra, I managed the <strong>Maruti Suzuki NEXA</strong> account — one of India's most premium automotive brands — handling end-to-end complaint auditing, SLA/TAT monitoring, and executive-level reporting. I earned the <strong>Zero Error Recognition Award</strong> for maintaining flawless data accuracy across high-volume operations.
+        </p>
+        <p>
+          Currently expanding my toolkit with <strong>SQL, Power BI, and Python</strong> to step into senior analytics and business intelligence roles. I believe the best MIS professional is one who doesn't just report data — but interprets it, questions it, and drives action from it.
+        </p>
+        <div class="hero-btns" style="margin-top:8px;">
+          <a href="#contact" class="btn-primary" style="font-size:13px;padding:12px 24px;">
+            Download Resume
+          </a>
+        </div>
+      </div>
+      <div class="about-card fade-in">
+        <div class="about-card-item">
+          <div class="aci-icon">💼</div>
+          <div>
+            <div class="aci-label">Current Status</div>
+            <div class="aci-val">Open to Work · Actively Interviewing</div>
+          </div>
+        </div>
+        <div class="about-card-item">
+          <div class="aci-icon">🏢</div>
+          <div>
+            <div class="aci-label">Last Employer</div>
+            <div class="aci-val">Tech Mahindra (Maruti NEXA Account)</div>
+          </div>
+        </div>
+        <div class="about-card-item">
+          <div class="aci-icon">📍</div>
+          <div>
+            <div class="aci-label">Location</div>
+            <div class="aci-val">Noida · Open to Delhi NCR</div>
+          </div>
+        </div>
+        <div class="about-card-item">
+          <div class="aci-icon">🎯</div>
+          <div>
+            <div class="aci-label">Target Roles</div>
+            <div class="aci-val">MIS Executive · Data Analyst · Reporting Analyst · Business Analyst</div>
+          </div>
+        </div>
+        <div class="about-card-item">
+          <div class="aci-icon">📊</div>
+          <div>
+            <div class="aci-label">Core Expertise</div>
+            <div class="aci-val">Advanced Excel · KPI Reporting · SLA/TAT Monitoring</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="container">
+    <div class="section-tag">Technical Skills</div>
+    <h2 class="section-title">Tools I use to<br>build data clarity.</h2>
+    <p class="section-sub">From raw data ingestion to executive-level dashboards — here's my operational stack.</p>
+    <div class="skills-grid">
+
+      <div class="skill-card fade-in">
+        <div class="skill-icon">📊</div>
+        <div class="skill-name">Advanced Excel</div>
+        <p style="color:var(--text-mid);font-size:13px;line-height:1.6;">Pivot Tables, XLOOKUP, VLOOKUP, IF/AND/OR logic, Conditional Formatting, Dynamic Charts, Data Validation, Macros.</p>
+        <div class="skill-level">
+          <div class="skill-bar-label"><span>Proficiency</span><span>Expert</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="92"></div></div>
+        </div>
+        <div class="skill-tags">
+          <span class="tag">Pivot Tables</span>
+          <span class="tag">XLOOKUP</span>
+          <span class="tag">Dashboards</span>
+        </div>
+      </div>
+
+      <div class="skill-card fade-in">
+        <div class="skill-icon">📈</div>
+        <div class="skill-name">KPI & MIS Reporting</div>
+        <p style="color:var(--text-mid);font-size:13px;line-height:1.6;">Daily/weekly/monthly MIS reports, KPI tracking, SLA breach alerts, TAT monitoring, executive summaries.</p>
+        <div class="skill-level">
+          <div class="skill-bar-label"><span>Proficiency</span><span>Advanced</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="88"></div></div>
+        </div>
+        <div class="skill-tags">
+          <span class="tag">SLA/TAT</span>
+          <span class="tag">MIS Reports</span>
+          <span class="tag gold">Zero Error</span>
+        </div>
+      </div>
+
+      <div class="skill-card fade-in">
+        <div class="skill-icon">🔍</div>
+        <div class="skill-name">Complaint Auditing</div>
+        <p style="color:var(--text-mid);font-size:13px;line-height:1.6;">End-to-end complaint lifecycle tracking, root cause analysis, quality scoring, resolution trend analysis.</p>
+        <div class="skill-level">
+          <div class="skill-bar-label"><span>Proficiency</span><span>Advanced</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="85"></div></div>
+        </div>
+        <div class="skill-tags">
+          <span class="tag">Root Cause</span>
+          <span class="tag">Quality Audit</span>
+          <span class="tag">CRM</span>
+        </div>
+      </div>
+
+      <div class="skill-card fade-in">
+        <div class="skill-icon">🟩</div>
+        <div class="skill-name">Google Sheets</div>
+        <p style="color:var(--text-mid);font-size:13px;line-height:1.6;">Collaborative dashboards, IMPORTRANGE, Google Apps Script basics, real-time team reporting solutions.</p>
+        <div class="skill-level">
+          <div class="skill-bar-label"><span>Proficiency</span><span>Advanced</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="80"></div></div>
+        </div>
+        <div class="skill-tags">
+          <span class="tag">IMPORTRANGE</span>
+          <span class="tag">Collaboration</span>
+        </div>
+      </div>
+
+      <div class="skill-card fade-in">
+        <div class="skill-icon">🗄️</div>
+        <div class="skill-name">SQL</div>
+        <p style="color:var(--text-mid);font-size:13px;line-height:1.6;">SELECT, WHERE, JOINs, GROUP BY, aggregate functions. Actively upskilling — working toward complex query writing.</p>
+        <div class="skill-level">
+          <div class="skill-bar-label"><span>Proficiency</span><span>Developing</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="48" style="background:linear-gradient(90deg,var(--accent-g),rgba(201,168,76,.4));"></div></div>
+        </div>
+        <div class="skill-tags">
+          <span class="tag gold">Learning</span>
+          <span class="tag">Queries</span>
+          <span class="tag">JOINs</span>
+        </div>
+      </div>
+
+      <div class="skill-card fade-in">
+        <div class="skill-icon">📉</div>
+        <div class="skill-name">Power BI</div>
+        <p style="color:var(--text-mid);font-size:13px;line-height:1.6;">Interactive report building, DAX basics, data modeling, visual storytelling. Upskilling with real project application.</p>
+        <div class="skill-level">
+          <div class="skill-bar-label"><span>Proficiency</span><span>Developing</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="40" style="background:linear-gradient(90deg,var(--accent-g),rgba(201,168,76,.4));"></div></div>
+        </div>
+        <div class="skill-tags">
+          <span class="tag gold">Learning</span>
+          <span class="tag">DAX</span>
+          <span class="tag">Visuals</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="container">
+    <div class="section-tag">Work Experience</div>
+    <h2 class="section-title">Where I built<br>my data expertise.</h2>
+    <div class="exp-card fade-in">
+      <div class="exp-top">
+        <div>
+          <div class="exp-company">Tech Mahindra</div>
+          <div class="exp-role">MIS Executive &amp; Complaint Auditor</div>
+        </div>
+        <div class="exp-meta">
+          <span class="exp-period">Oct 2024 — May 2025</span>
+          <div class="exp-location">📍 Noida, Uttar Pradesh</div>
+        </div>
+      </div>
+      <div class="exp-client">
+        ⭐ Client Account: Maruti Suzuki NEXA (Premium Automotive)
+      </div>
+      <ul class="exp-bullets">
+        <li><strong>Owned end-to-end MIS reporting</strong> for the Maruti NEXA complaint handling vertical — producing daily, weekly, and monthly dashboards consumed by senior operations management.</li>
+        <li>Designed and automated <strong>15+ KPI tracking dashboards</strong> in Advanced Excel, reducing manual reporting time significantly and enabling real-time decision-making.</li>
+        <li>Conducted <strong>complaint lifecycle audits</strong> across 500+ cases monthly — tracking resolution TAT, SLA compliance, and escalation patterns with zero data entry errors.</li>
+        <li>Built <strong>XLOOKUP and Pivot Table-driven</strong> reconciliation models for cross-team data validation, eliminating discrepancies in operational records.</li>
+        <li>Identified recurring complaint patterns and <strong>presented root cause findings</strong> to team leads, directly contributing to process improvements in the NEXA customer experience workflow.</li>
+        <li>Maintained <strong>99%+ data accuracy</strong> under high-volume conditions — recognized formally with the <strong>Zero Error Recognition Award</strong> by Tech Mahindra management.</li>
+        <li>Collaborated with cross-functional teams (Customer Service, Quality, Operations) to ensure data alignment across all reporting streams.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECT -->
+<section id="projects">
+  <div class="container">
+    <div class="section-tag">Featured Project</div>
+    <h2 class="section-title">Built for a<br>premium brand.</h2>
+    <div class="proj-card">
+      <div class="proj-preview fade-in">
+        <div class="dash-top">
+          <div class="dash-mini"><div class="dash-mini-val">847</div><div class="dash-mini-lbl">Total Cases</div></div>
+          <div class="dash-mini"><div class="dash-mini-val" style="color:var(--accent-g);">94%</div><div class="dash-mini-lbl">Resolved</div></div>
+          <div class="dash-mini"><div class="dash-mini-val">2.3d</div><div class="dash-mini-lbl">Avg TAT</div></div>
+        </div>
+        <div class="dash-bar">
+          <div style="font-size:11px;color:var(--text-lo);margin-bottom:10px;text-transform:uppercase;letter-spacing:1px;">Complaint Category Breakdown</div>
+          <div class="dash-bar-row"><div class="dash-bar-lbl">Service</div><div class="dash-bar-t"><div class="dash-bar-f" style="width:78%"></div></div><div class="dash-bar-val">78%</div></div>
+          <div class="dash-bar-row"><div class="dash-bar-lbl">Delivery</div><div class="dash-bar-t"><div class="dash-bar-f" style="width:54%"></div></div><div class="dash-bar-val">54%</div></div>
+          <div class="dash-bar-row" style="margin-bottom:0"><div class="dash-bar-lbl">Product</div><div class="dash-bar-t"><div class="dash-bar-f" style="width:32%"></div></div><div class="dash-bar-val">32%</div></div>
+        </div>
+        <div style="display:flex;gap:8px;">
+          <div style="flex:1;background:var(--bg-card2);border:1px solid var(--border);border-radius:8px;padding:10px 12px;">
+            <div style="font-size:10px;color:var(--text-lo);text-transform:uppercase;letter-spacing:1px;">SLA Breach</div>
+            <div style="font-family:'JetBrains Mono',monospace;font-size:16px;color:#FF6B6B;margin-top:2px;">2.1%</div>
+          </div>
+          <div style="flex:1;background:var(--bg-card2);border:1px solid var(--border);border-radius:8px;padding:10px 12px;">
+            <div style="font-size:10px;color:var(--text-lo);text-transform:uppercase;letter-spacing:1px;">Accuracy</div>
+            <div style="font-family:'JetBrains Mono',monospace;font-size:16px;color:#4CAF50;margin-top:2px;">99.8%</div>
+          </div>
+        </div>
+      </div>
+      <div class="proj-info fade-in">
+        <div class="section-tag" style="margin-bottom:12px;">Case Study</div>
+        <div class="proj-title">Maruti NEXA Complaint Intelligence Dashboard</div>
+        <p class="proj-desc">
+          A comprehensive complaint analytics system built for Maruti Suzuki NEXA's operations team — India's premium automotive brand. The dashboard aggregated multi-source data to give operations managers a single-pane view of complaint volume, SLA performance, TAT trends, and resolution rates.
+        </p>
+        <p class="proj-desc">
+          Previously, complaint data was fragmented across sheets and reported manually with a 24-hour lag. This system brought it to near-real-time, enabling faster escalation and more accurate performance reviews.
+        </p>
+        <div class="proj-stack">
+          <span class="tag">Advanced Excel</span>
+          <span class="tag">Pivot Tables</span>
+          <span class="tag">XLOOKUP</span>
+          <span class="tag">Dynamic Charts</span>
+          <span class="tag">Conditional Formatting</span>
+          <span class="tag gold">MIS Reporting</span>
+        </div>
+        <a href="https://www.linkedin.com/in/yashwantkumarx" target="_blank" class="btn-ghost" style="font-size:13px;padding:12px 22px;">
+          View on LinkedIn →
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="container">
+    <div class="section-tag">Education</div>
+    <h2 class="section-title">Academic foundation<br>built for analysis.</h2>
+    <div class="edu-grid">
+      <div class="edu-card fade-in">
+        <div class="edu-icon">🔬</div>
+        <div class="edu-degree">B.Sc. — Physics Honours</div>
+        <div class="edu-univ">University of Lucknow (Chhatrapati Sahuji Maharaj University)</div>
+        <div class="edu-year">Graduated</div>
+      </div>
+      <div class="edu-card fade-in">
+        <div class="edu-icon">📚</div>
+        <div class="edu-degree">B.A. — Hindi Honours</div>
+        <div class="edu-univ">University Studies</div>
+        <div class="edu-year">Graduated</div>
+      </div>
+      <div class="edu-card fade-in">
+        <div class="edu-icon">🎓</div>
+        <div class="edu-degree">M.A. — Hindi</div>
+        <div class="edu-univ">Currently Pursuing</div>
+        <div class="edu-year" style="color:var(--accent-g);">In Progress ✦</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AWARDS -->
+<section id="awards">
+  <div class="container">
+    <div class="section-tag">Recognition</div>
+    <h2 class="section-title">Earned, not given.</h2>
+    <div class="award-card fade-in">
+      <div class="award-icon">🏆</div>
+      <div class="award-body">
+        <div class="award-name">Zero Error Recognition Award</div>
+        <div class="award-by">Awarded by Tech Mahindra Management · 2024–2025</div>
+        <p class="award-desc">
+          Recognized for maintaining <strong style="color:var(--text-hi);">zero data entry errors</strong> across high-volume complaint auditing operations for the Maruti Suzuki NEXA account. This award reflects consistent delivery of accurate, reliable MIS data under the pressure of daily reporting deadlines — a standard that directly impacts executive-level operational decisions for one of India's most premium automotive brands.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="section-tag">Contact</div>
+    <div class="contact-grid">
+      <div>
+        <h2 class="contact-heading">Let's build<br>something great.</h2>
+        <p class="contact-sub">Open to MIS Executive, Reporting Analyst, Data Analyst, Business Analyst, and Backend Operations roles in Noida and Delhi NCR. Let's connect.</p>
+        <div class="contact-links">
+          <a href="https://www.linkedin.com/in/yashwantkumarx" target="_blank" class="contact-link">
+            <div class="cl-icon">🔗</div>
+            <div><div class="cl-label">LinkedIn</div><div class="cl-val">linkedin.com/in/yashwantkumarx</div></div>
+          </a>
+          <a href="mailto:your.email@gmail.com" class="contact-link">
+            <div class="cl-icon">📧</div>
+            <div><div class="cl-label">Email</div><div class="cl-val">yashwantkumar@email.com</div></div>
+          </a>
+          <div class="contact-link" style="cursor:default;">
+            <div class="cl-icon">📍</div>
+            <div><div class="cl-label">Location</div><div class="cl-val">Noida, Uttar Pradesh · Open to Delhi NCR</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form-area fade-in">
+        <div class="form-title">Send a Message</div>
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" placeholder="Recruiter / HR Name">
+        </div>
+        <div class="form-group">
+          <label>Company</label>
+          <input type="text" placeholder="Your Company Name">
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea placeholder="Tell me about the role or opportunity..."></textarea>
+        </div>
+        <button class="form-submit" onclick="alert('Message sent! Yashwant will reach out shortly. 🙏')">Send Message →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <p>Designed &amp; Built with intention &nbsp;·&nbsp; <strong style="color:var(--text-hi);">Yashwant Kumar</strong> &nbsp;·&nbsp; Noida, India &nbsp;·&nbsp; <a href="https://www.linkedin.com/in/yashwantkumarx" target="_blank">#yashwantkumarx</a></p>
+  </div>
+</footer>
+
+<script>
+/* ── ANIMATED CANVAS BACKGROUND ── */
+const canvas = document.getElementById('bg-canvas');
+const ctx = canvas.getContext('2d');
+let W, H, nodes = [], lines = [];
+
+function resize() {
+  W = canvas.width = window.innerWidth;
+  H = canvas.height = window.innerHeight;
+}
+resize();
+window.addEventListener('resize', resize);
+
+function initNodes() {
+  nodes = [];
+  const count = Math.floor((W * H) / 22000);
+  for (let i = 0; i < count; i++) {
+    nodes.push({
+      x: Math.random() * W, y: Math.random() * H,
+      vx: (Math.random() - .5) * .3, vy: (Math.random() - .5) * .3,
+      r: Math.random() * 1.5 + .5
+    });
+  }
+}
+initNodes();
+
+function draw() {
+  ctx.clearRect(0, 0, W, H);
+  nodes.forEach(n => {
+    n.x += n.vx; n.y += n.vy;
+    if (n.x < 0 || n.x > W) n.vx *= -1;
+    if (n.y < 0 || n.y > H) n.vy *= -1;
+    ctx.beginPath();
+    ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2);
+    ctx.fillStyle = 'rgba(0,198,224,0.6)';
+    ctx.fill();
+  });
+  for (let i = 0; i < nodes.length; i++) {
+    for (let j = i + 1; j < nodes.length; j++) {
+      const dx = nodes[i].x - nodes[j].x;
+      const dy = nodes[i].y - nodes[j].y;
+      const d = Math.sqrt(dx*dx + dy*dy);
+      if (d < 130) {
+        ctx.beginPath();
+        ctx.moveTo(nodes[i].x, nodes[i].y);
+        ctx.lineTo(nodes[j].x, nodes[j].y);
+        ctx.strokeStyle = `rgba(0,198,224,${(1 - d/130) * 0.15})`;
+        ctx.lineWidth = .5;
+        ctx.stroke();
+      }
+    }
+  }
+  requestAnimationFrame(draw);
+}
+draw();
+
+/* ── COUNTER ANIMATION ── */
+function animateCounter(el) {
+  const target = parseInt(el.dataset.target);
+  const duration = 1800;
+  const start = performance.now();
+  function update(now) {
+    const progress = Math.min((now - start) / duration, 1);
+    const eased = 1 - Math.pow(1 - progress, 3);
+    el.textContent = Math.floor(eased * target);
+    if (progress < 1) requestAnimationFrame(update);
+    else el.textContent = target;
+  }
+  requestAnimationFrame(update);
+}
+
+/* ── SKILL BAR ANIMATION ── */
+function animateBar(el) {
+  el.style.width = el.dataset.width + '%';
+}
+
+/* ── INTERSECTION OBSERVER ── */
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      entry.target.querySelectorAll('.counter').forEach(animateCounter);
+      entry.target.querySelectorAll('.skill-bar-fill').forEach(animateBar);
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.15 });
+
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+document.querySelectorAll('.stat-card').forEach(el => observer.observe(el));
+
+/* ── NAV SCROLL ── */
+window.addEventListener('scroll', () => {
+  const nav = document.querySelector('nav');
+  if (window.scrollY > 50) {
+    nav.style.background = 'rgba(3,11,24,0.96)';
+  } else {
+    nav.style.background = 'rgba(3,11,24,0.82)';
+  }
+});
+</script>
+</body>
+</html>
